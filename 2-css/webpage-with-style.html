@@ -29,8 +29,54 @@
 
          #first_section{
              color:blue;
-             background-color:antiquewhite;
-             width: 50%
+             background-color:#EBFDCB;
+             width: 50%;
+             float:left;
+         }
+
+         .second_section{
+             color:brown;
+             background-color: bisque;
+             width:500px;
+             float:right;
+         }
+         .clear-float{
+             clear:both;
+         }
+         #third_section{
+            color:blue;
+            background-color:#EBFDCB;
+            width: 50%;
+            position: relative;
+            left:100px;     
+            top:100px;
+            z-index: 1;       
+         }
+         .fourth_section{
+             color:brown;
+             background-color: bisque;
+             width:500px;
+            position:relative;
+            z-index: 2;
+            opacity:0.8;
+            right:-100px;
+            
+         }
+         .fifth_section{
+            color:blueviolet;
+            background-color:burlywood;
+            width:400px;
+            position:absolute;
+            left:200px;
+         }
+
+         .sixth_section{
+             color:chocolate;
+             background-color:yellowgreen;
+             width:200px;
+             top:200px;
+             z-index: -1;
+             position:fixed;
          }
 
         
@@ -48,6 +94,30 @@
         <div id="first_section">
         <p>The quick brown fix jumped of the lady dog</p>
         <h1>CSS is cool!</h1>
+        </div>
+
+        <div class="second_section">
+            <p>The quick brown fix jumped of the lady dog</p>
+            <h1>CSS is cool!</h1>
+        </div>
+        <p>This paragraph is not floated.</p>
+        <div class="clear-float"></div>
+        <p>Float is clear now.</p>
+        <div id="third_section">
+            <p>The quick brown fix jumped of the lady dog</p>
+            <h1>CSS is cool!</h1>
+        </div>
+        <div class="fourth_section">
+            <p>The quick brown fix jumped of the lady dog</p>
+            <h1>CSS is cool!</h1>
+        </div>
+        <div class="fifth_section">
+            <p>The quick brown fix jumped of the lady dog</p>
+            <h1>CSS is cool!</h1>
+        </div>
+        <div class="sixth_section">
+            <p>The quick brown fix jumped of the lady dog</p>
+            <h1>CSS is cool!</h1>
         </div>
     </body>
 </html>
